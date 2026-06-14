@@ -519,6 +519,11 @@ int f2fs_build_stats(struct f2fs_sb_info *sbi)
 	return 0;
 }
 
+#ifndef CONFIG_DEBUG_FS
+static inline void update_general_status(struct f2fs_sb_info *sbi) {}
+static inline void update_mem_info(struct f2fs_sb_info *sbi) {}
+#endif
+
 void f2fs_update_sec_stats(struct f2fs_sb_info *sbi)
 {
 	update_general_status(sbi);

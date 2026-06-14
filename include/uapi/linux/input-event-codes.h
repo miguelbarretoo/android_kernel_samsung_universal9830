@@ -822,6 +822,7 @@
 #define SW_HPHL_OVERCURRENT	0x11  /* set = over current on left hph */
 #define SW_HPHR_OVERCURRENT	0x12  /* set = over current on right hph */
 #define SW_PEN_INSERT		0x13  /* set = pen insert, remove */
+#define SW_PEN_INSERTED		0x13  /* set = pen inserted */
 #define SW_MICROPHONE2_INSERT	0x14  /* set = inserted */
 #define SW_FLIP                 0x15    /* set = flip cover */
 #define SW_UNSUPPORT_INSERT	0x16  /* set = unsupported device inserted */
